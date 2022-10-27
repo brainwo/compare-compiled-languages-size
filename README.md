@@ -2,7 +2,13 @@ Compare size of compiled languages.
 
 ### Chart
 
+Linear chart:
+
 ![](./assets/chart.png)
+
+Logarithmic chart:
+
+![](./assets/chart_log.png)
 
 ### Table
 
