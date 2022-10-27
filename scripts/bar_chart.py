@@ -12,7 +12,7 @@ lang_name = list(map(lambda x: f"{x.split()[1]} ({x.split()[0]})", size_data))
 
 def generate_image(log: bool):
     fig = px.bar(
-        title=f"Compiled language size comparison {'(in logarithmic)' if log else ''}",
+        title=f"Compiled language size comparison {'(in logarithmic scale)' if log else ''}",
         x=lang_name,
         y=lang_size,
         labels={"x": "compiler-language", "y": "size in bytes"},
