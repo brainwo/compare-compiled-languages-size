@@ -5,8 +5,9 @@ import plotly.express as px
 file = open("size.txt", "r")
 size_data = file.readlines()
 
-lang_size = list(map(lambda x: int(x.split()[0]), size_data))
-lang_name = list(map(lambda x: f"{x.split()[1]} ({x.split()[0]}K)", size_data))
+lang_size = list(
+    map(lambda x: int(''.join(x.split()[0].split(","))), size_data))
+lang_name = list(map(lambda x: f"{x.split()[1]} ({x.split()[0]})", size_data))
 
 
 def generate_image(log: bool):
@@ -14,7 +15,7 @@ def generate_image(log: bool):
         title=f"Compiled language size comparison {'(in logarithmic)' if log else ''}",
         x=lang_name,
         y=lang_size,
-        labels={"x": "compiler-language", "y": "size in kilobytes"},
+        labels={"x": "compiler-language", "y": "size in bytes"},
         log_y=log
     )
 

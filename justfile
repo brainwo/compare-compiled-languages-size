@@ -48,7 +48,7 @@ bench:
 	zsh -c time ./bin/ocamlopt-ocaml
 
 @get-size:
-	/bin/ls -s -S -r -1 bin > size.txt
+	exa --sort size --long -B --no-user --no-icons --no-permissions --no-time bin > size.txt
 
 @gcc-c:
 	gcc lang/c/main.c -s -o bin/gcc-c

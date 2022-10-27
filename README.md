@@ -12,31 +12,30 @@ Logarithmic chart:
 
 ### Table
 
-| compiler - language | version \* | size (in kilobytes) \*\* |
-| ------------------- | ---------- | ------------------------ |
-| zig-zig             |            | 4                        |
-| swiftc-swift        |            | 8                        |
-| nasm-asm            |            | 12                       |
-| nim-nim             |            | 16                       |
-| valac-vala          |            | 16                       |
-| gcc-c               |            | 16                       |
-| clang-c             |            | 16                       |
-| nelua-nelua         |            | 16                       |
-| tinygo-go           |            | 20                       |
-| ldc-d               |            | 24                       |
-| cargo-rust          |            | 32                       |
-| jakt-jakt           |            | 96                       |
-| odin-odin           |            | 160                      |
-| v-v                 |            | 176                      |
-| kotlinc-kotlin      |            | 204                      |
-| crystal-crystal     |            | 212                      |
-| rustc-rust          |            | 276                      |
-| gnatmake-ada        |            | 288                      |
-| ocamlc-ocaml        |            | 312                      |
-| koka-koka           |            | 420                      |
-| go-go               |            | 1188                     |
-| dart-dart           |            | 4896                     |
-| ghc-haskell         |            | 5804                     |
+| compiler - language | version \* | size (in bytes) |
+| ------------------- | ---------- | --------------- |
+| zig-zig             |            | 2,328           |
+| swiftc-swift        |            | 7,784           |
+| nasm-asm            |            | 8,488           |
+| nim-nim             |            | 14,248          |
+| valac-vala          |            | 14,384          |
+| gcc-c               |            | 14,384          |
+| clang-c             |            | 14,392          |
+| nelua-nelua         |            | 14,400          |
+| tinygo-go           |            | 19,928          |
+| ldc-d               |            | 22,960          |
+| cargo-rust          |            | 30,784          |
+| jakt-jakt           |            | 96,528          |
+| odin-odin           |            | 162,632         |
+| v-v                 |            | 179,504         |
+| kotlinc-kotlin      |            | 208,376         |
+| crystal-crystal     |            | 215,936         |
+| rustc-rust          |            | 280,880         |
+| gnatmake-ada        |            | 292,408         |
+| ocamlc-ocaml        |            | 318,608         |
+| koka-koka           |            | 427,552         |
+| go-go               |            | 1,213,272       |
+| dart-dart           |            | 5,010,152       |
+| ghc-haskell         |            | 5,942,344       |
 
 \* TODO: add compiler version.\
-\*\* size is calculated as 1024 bytes.

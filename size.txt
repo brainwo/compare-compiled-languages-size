@@ -1,23 +1,23 @@
-   4 zig-zig
-   8 swiftc-swift
-  12 nasm-asm
-  16 nim-nim
-  16 valac-vala
-  16 gcc-c
-  16 clang-c
-  16 nelua-nelua
-  20 tinygo-go
-  24 ldc-d
-  32 cargo-rust
-  96 jakt-jakt
- 160 odin-odin
- 176 v-v
- 204 kotlinc-kotlin
- 212 crystal-crystal
- 276 rustc-rust
- 288 gnatmake-ada
- 312 ocamlc-ocaml
- 420 koka-koka
-1188 go-go
-4896 dart-dart
-5804 ghc-haskell
+    2,328 zig-zig
+    7,784 swiftc-swift
+    8,488 nasm-asm
+   14,248 nim-nim
+   14,384 gcc-c
+   14,384 valac-vala
+   14,392 clang-c
+   14,400 nelua-nelua
+   19,928 tinygo-go
+   22,960 ldc-d
+   30,784 cargo-rust
+   96,528 jakt-jakt
+  162,632 odin-odin
+  179,504 v-v
+  208,376 kotlinc-kotlin
+  215,936 crystal-crystal
+  280,880 rustc-rust
+  292,408 gnatmake-ada
+  318,608 ocamlc-ocaml
+  427,552 koka-koka
+1,213,272 go-go
+5,010,152 dart-dart
+5,942,344 ghc-haskell
