@@ -38,4 +38,4 @@ Logarithmic scale:
 | dart-dart           |            | 5,010,152       |
 | ghc-haskell         |            | 5,942,344       |
 
-\* TODO: add compiler version.\
+\* TODO: add compiler version.
