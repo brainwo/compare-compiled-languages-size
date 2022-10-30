@@ -31,6 +31,7 @@ Logarithmic scale:
 |go|tinygo|tinygo version 0.26.0 linux/amd64 (using go version go1.19.2 and LLVM version 14.0.0)|20,120|
 |jakt|jakt1|None|75,920|
 |jakt|jakt2|None|75,920|
+|pony|ponyc|0.43.1- [release]|123,008|
 |odin|odin|odin version dev-2022-10:2cd895c5|170,440|
 |v|v|V 0.3.1 f2f6ea5|179,504|
 |kotlin|kotlinc|Kotlin/Native: 1.7.10|208,376|

@@ -26,6 +26,7 @@
 	just zig-zig
 	just koka-koka
 	just ocamlopt-ocaml
+	just ponyc-pony
 	strip -s bin/*
 	exa -l --sort size --no-user --no-time --no-permissions --no-icons bin
 	just get-size
@@ -108,6 +109,8 @@ bench:
 	nasm -v >> version.txt
 	echo -n "ocamlopt|" >> version.txt
 	ocamlopt --version >> version.txt
+	echo -n "ponyc|" >> version.txt
+	ponyc --version | head -1 >> version.txt
 
 @get-size:
 	exa --sort size --long -B --no-user --no-icons --no-permissions --no-time bin > size.txt
@@ -212,6 +215,9 @@ bench:
 @ocamlopt-ocaml:
 	ocamlopt -o bin/ocamlopt-ocaml -compact lang/ocaml/main.ml 
 	rm lang/ocaml/main.cmi lang/ocaml/main.cmx lang/ocaml/main.o
+
+@ponyc-pony:
+	ponyc -o=bin -b=ponyc-pony -s lang/pony/
 
 @clean:
 	rm -rf bin
