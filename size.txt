@@ -1,22 +1,22 @@
-    2,328 zig-zig
+    3,688 zigcc-c
+    5,344 zig-zig
     7,784 swiftc-swift
     8,488 nasm-asm
-   14,248 nim-nim
    14,384 gcc-c
-   14,384 valac-vala
-   14,392 clang-c
    14,400 nelua-nelua
-   19,928 tinygo-go
+   14,472 clang-c
+   14,552 nim-nim
+   20,120 tinygo-go
    22,960 ldc-d
-   30,784 cargo-rust
-   96,528 jakt-jakt
-  162,632 odin-odin
+   75,920 jakt1-jakt
+   75,920 jakt2-jakt
+  170,440 odin-odin
   179,504 v-v
   208,376 kotlinc-kotlin
-  215,936 crystal-crystal
-  280,880 rustc-rust
+  216,016 crystal-crystal
+  272,688 rustc-rust
   292,408 gnatmake-ada
-  318,608 ocamlc-ocaml
+  318,608 ocamlopt-ocaml
   427,552 koka-koka
 1,213,272 go-go
 5,010,152 dart-dart

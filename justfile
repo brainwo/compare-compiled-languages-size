@@ -1,13 +1,16 @@
 @default:
+	just clean
 	just gcc-c
 	just clang-c
+	just zigcc-c
 	just rustc-rust
 	just ldc-d
 	just odin-odin
 	just nelua-nelua
 	just go-go
 	just tinygo-go
-	just jakt-jakt
+	just jakt1-jakt
+	just jakt2-jakt
 	just valac-vala
 	just crystal-crystal
 	just v-v
@@ -21,18 +24,25 @@
 	just zig-zig
 	just koka-koka
 	just ocamlopt-ocaml
+	strip -s bin/*
 	exa -l --sort size --no-user --no-time --no-permissions --no-icons bin
+	just get-size
+	just version
+	python3 scripts/bar_chart.py
+	python3 scripts/readme.py
 
 bench:
 	zsh -c time ./bin/gcc-c
 	zsh -c time ./bin/clang-c
+	zsh -c time ./bin/zigcc-c
 	zsh -c time ./bin/rustc-rust
 	zsh -c time ./bin/ldc-d
 	zsh -c time ./bin/odin-odin
 	zsh -c time ./bin/nelua-nelua
 	zsh -c time ./bin/go-go
 	zsh -c time ./bin/tinygo-go
-	zsh -c time ./bin/jakt-jakt
+	zsh -c time ./bin/jakt1-jakt
+	zsh -c time ./bin/jakt2-jakt
 	zsh -c time ./bin/valac-vala
 	zsh -c time ./bin/crystal-crystal
 	zsh -c time ./bin/v-v
@@ -47,6 +57,52 @@ bench:
 	zsh -c time ./bin/nasm-asm
 	zsh -c time ./bin/ocamlopt-ocaml
 
+@version:
+	echo -n "gcc|" > version.txt
+	gcc --version | head -1 >> version.txt
+	echo -n "clang|" >> version.txt
+	clang --version | head -1 >> version.txt
+	echo -n "zigcc|" >> version.txt
+	zig cc --version | head -1 >> version.txt
+	echo -n "rustc|" >> version.txt
+	rustc --version >> version.txt
+	echo -n "ldc|" >> version.txt
+	ldc --version | head -1 >> version.txt
+	echo -n "odin|" >> version.txt
+	odin version | head -1 >> version.txt
+	echo -n "nelua|" >> version.txt
+	nelua --version | head -1 >> version.txt
+	echo -n "go|" >> version.txt
+	go version >> version.txt
+	echo -n "tinygo|" >> version.txt
+	tinygo version >> version.txt
+	echo -n "valac|" >> version.txt
+	valac --version >> version.txt
+	echo -n "crystal|" >> version.txt
+	crystal --version | grep "Crystal" --color=never >> version.txt
+	echo -n "v|" >> version.txt
+	v --version >> version.txt
+	echo -n "nim|" >> version.txt
+	nim --version | head -1 >> version.txt
+	echo -n "dart|" >> version.txt
+	dart --version >> version.txt
+	echo -n "kotlinc|" >> version.txt
+	kotlinc-native -version >> version.txt
+	echo -n "gnatmake|" >> version.txt
+	gnatmake --version | head -1 >> version.txt
+	echo -n "ghc|" >> version.txt
+	ghc --version >> version.txt
+	echo -n "swiftc|" >> version.txt
+	swiftc --version | head -1 >> version.txt
+	echo -n "zig|" >> version.txt
+	zig version >> version.txt
+	echo -n "koka|" >> version.txt
+	koka --version | head -1 | cut -c 5- >> version.txt
+	echo -n "nasm|" >> version.txt
+	nasm -v >> version.txt
+	echo -n "ocamlopt|" >> version.txt
+	ocamlopt --version >> version.txt
+
 @get-size:
 	exa --sort size --long -B --no-user --no-icons --no-permissions --no-time bin > size.txt
 
@@ -55,6 +111,9 @@ bench:
 
 @clang-c:
 	clang lang/c/main.c -s -o bin/clang-c
+
+@zigcc-c:
+	zig cc lang/c/main.c -s -o bin/zigcc-c
 
 @rustc-rust:
 	rustc -C opt-level=z -C lto=yes -C strip=debuginfo -C debuginfo=0 -C panic=abort -C codegen-units=1 -C incremental=false -o bin/rustc-rust lang/rust/main.rs
@@ -72,10 +131,16 @@ bench:
 @go-go:
 	go build -ldflags '-s -w' -o bin/go-go lang/go/main.go
 
-@jakt-jakt:
-	mkdir build
-	jakt -O -R /usr/lib/jakt -o jakt-jakt lang/jakt/main.jakt
-	mv build/jakt-jakt bin/jakt-jakt
+@jakt1-jakt:
+	mkdir -p build
+	jakt_stage1 -O -o jakt1-jakt lang/jakt/main.jakt
+	mv build/jakt1-jakt bin/jakt1-jakt
+	rm -r build
+
+@jakt2-jakt:
+	mkdir -p build
+	jakt_stage2 -O -o jakt2-jakt lang/jakt/main.jakt
+	mv build/jakt2-jakt bin/jakt2-jakt
 	rm -r build
 
 @valac-vala:
@@ -124,7 +189,7 @@ bench:
 	swiftc lang/swift/main.swift -o bin/swiftc-swift -O -static -suppress-warnings -assert-config Release -Osize -Onone -Ounchecked
 
 @zig-zig:
-	zig build-exe -O ReleaseSmall --strip lang/zig/main.zig
+	zig build-exe -O ReleaseSmall -fstrip lang/zig/main.zig
 	mv main bin/zig-zig
 	rm main.o
 
@@ -132,5 +197,9 @@ bench:
 	koka --compile lang/koka/main.kk -o bin/koka-koka -O=3
 
 @ocamlopt-ocaml:
-	ocamlopt -o bin/ocamlc-ocaml -compact lang/ocaml/main.ml 
+	ocamlopt -o bin/ocamlopt-ocaml -compact lang/ocaml/main.ml 
 	rm lang/ocaml/main.cmi lang/ocaml/main.cmx lang/ocaml/main.o
+
+@clean:
+	rm -rf bin
+	mkdir bin
