@@ -2,6 +2,8 @@ gcc|gcc (GCC) 12.2.0
 clang|clang version 14.0.6
 zigcc|clang version 15.0.3 (git@github.com:ziglang/zig-bootstrap.git 0ce789d0f7a4d89fdc4d9571209b6874d3e260c9)
 rustc|rustc 1.66.0-nightly (db0597f56 2022-10-11)
+gdc|gdc (GCC) 12.2.0
+dmd|DMD64 D Compiler v2.100.2
 ldc|LDC - the LLVM D compiler (1.30.0):
 odin|odin version dev-2022-10:2cd895c5
 nelua|Nelua 0.2.0-dev

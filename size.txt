@@ -6,8 +6,8 @@
    14,400 nelua-nelua
    14,472 clang-c
    14,552 nim-nim
+   18,864 ldc-d
    20,120 tinygo-go
-   22,960 ldc-d
    75,920 jakt1-jakt
    75,920 jakt2-jakt
   170,440 odin-odin
@@ -18,6 +18,8 @@
   292,408 gnatmake-ada
   318,608 ocamlopt-ocaml
   427,552 koka-koka
+  712,504 dmd-d
+  826,520 gdc-d
 1,213,272 go-go
 5,010,152 dart-dart
 5,942,344 ghc-haskell

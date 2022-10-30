@@ -4,7 +4,9 @@
 	just clang-c
 	just zigcc-c
 	just rustc-rust
+	just gdc-d
 	just ldc-d
+	just dmd-d
 	just odin-odin
 	just nelua-nelua
 	just go-go
@@ -29,7 +31,7 @@
 	just get-size
 	just version
 	python3 scripts/bar_chart.py
-	python3 scripts/readme.py
+	python3 scripts/generate_readme.py
 
 bench:
 	zsh -c time ./bin/gcc-c
@@ -66,6 +68,10 @@ bench:
 	zig cc --version | head -1 >> version.txt
 	echo -n "rustc|" >> version.txt
 	rustc --version >> version.txt
+	echo -n "gdc|" >> version.txt
+	gdc --version | head -1 >> version.txt
+	echo -n "dmd|" >> version.txt
+	dmd --version | head -1 >> version.txt
 	echo -n "ldc|" >> version.txt
 	ldc --version | head -1 >> version.txt
 	echo -n "odin|" >> version.txt
@@ -118,9 +124,16 @@ bench:
 @rustc-rust:
 	rustc -C opt-level=z -C lto=yes -C strip=debuginfo -C debuginfo=0 -C panic=abort -C codegen-units=1 -C incremental=false -o bin/rustc-rust lang/rust/main.rs
 
+@gdc-d:
+	gdc lang/d/main.d -s -o bin/gdc-d
+
 @ldc-d:
-	ldc lang/d/main.d --of=bin/ldc-d --release
+	ldc lang/d/main.d -Oz --of=bin/ldc-d --release
 	rm bin/ldc-d.o
+
+@dmd-d:
+	dmd lang/d/main.d -O -of=bin/dmd-d -release
+	rm bin/dmd-d.o
 
 @odin-odin:
 	odin build lang/odin/main.odin -file -out:bin/odin-odin -o:size -disable-assert
