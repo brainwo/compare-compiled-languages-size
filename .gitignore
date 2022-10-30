@@ -2,4 +2,4 @@ bin/
 false/
 build/
 .koka/
-main.vala.o
+main.*

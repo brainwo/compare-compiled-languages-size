@@ -30,6 +30,11 @@ data = list(map(lambda x: (
 new_line = "\n"
 
 template = f"""
+<!--
+This file is auto-generate using scripts/generate_readme.py
+Do not change manually
+-->
+
 Compare size of compiled languages.
 
 ### Chart
@@ -49,6 +54,7 @@ Logarithmic scale:
 {new_line.join(list(map(lambda x: f"|{x[0]}|{x[1]}|{x[2]}|{x[3]}|" ,data)))}
 
 """
+
 readme.write(template.strip())
 readme.close()
 sizetxt.close()

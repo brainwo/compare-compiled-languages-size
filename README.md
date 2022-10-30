@@ -1,3 +1,7 @@
+<!--
+This is auto-generate using scripts/generate_readme.py
+Do not change manually
+-->
 Compare size of compiled languages.
 
 ### Chart
