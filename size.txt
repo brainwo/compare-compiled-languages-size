@@ -4,6 +4,7 @@
     8,488 nasm-asm
    14,384 gcc-c
    14,400 nelua-nelua
+   14,424 gfortran-fortran
    14,472 clang-c
    14,552 nim-nim
    18,864 ldc-d

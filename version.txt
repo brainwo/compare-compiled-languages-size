@@ -5,6 +5,7 @@ rustc|rustc 1.66.0-nightly (db0597f56 2022-10-11)
 gdc|gdc (GCC) 12.2.0
 dmd|DMD64 D Compiler v2.100.2
 ldc|LDC - the LLVM D compiler (1.30.0):
+gfortran|GNU Fortran (GCC) 12.2.0
 odin|odin version dev-2022-10:2cd895c5
 nelua|Nelua 0.2.0-dev
 go|go version go1.19.2 linux/amd64

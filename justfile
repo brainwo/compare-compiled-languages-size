@@ -7,6 +7,7 @@
 	just gdc-d
 	just ldc-d
 	just dmd-d
+	just gfortran-fortran
 	just odin-odin
 	just nelua-nelua
 	just go-go
@@ -75,6 +76,8 @@ bench:
 	dmd --version | head -1 >> version.txt
 	echo -n "ldc|" >> version.txt
 	ldc --version | head -1 >> version.txt
+	echo -n "gfortran|" >> version.txt
+	gfortran --version | head -1 >> version.txt
 	echo -n "odin|" >> version.txt
 	odin version | head -1 >> version.txt
 	echo -n "nelua|" >> version.txt
@@ -137,6 +140,9 @@ bench:
 @dmd-d:
 	dmd lang/d/main.d -O -of=bin/dmd-d -release
 	rm bin/dmd-d.o
+
+@gfortran-fortran:
+	gfortran lang/fortran/main.f90 -o bin/gfortran-fortran
 
 @odin-odin:
 	odin build lang/odin/main.odin -file -out:bin/odin-odin -o:size -disable-assert

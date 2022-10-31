@@ -2,4 +2,5 @@ bin/
 false/
 build/
 .koka/
-main.*
+
+*.o

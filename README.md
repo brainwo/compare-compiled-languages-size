@@ -25,6 +25,7 @@ Logarithmic scale:
 |asm|nasm|NASM version 2.15.05 compiled on Sep 24 2020|8,488|
 |c|gcc|gcc (GCC) 12.2.0|14,384|
 |nelua|nelua|Nelua 0.2.0-dev|14,400|
+|fortran|gfortran|GNU Fortran (GCC) 12.2.0|14,424|
 |c|clang|clang version 14.0.6|14,472|
 |nim|nim|Nim Compiler Version 1.6.8 [Linux: amd64]|14,552|
 |d|ldc|LDC - the LLVM D compiler (1.30.0):|18,864|
