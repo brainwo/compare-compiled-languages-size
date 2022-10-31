@@ -33,6 +33,7 @@ Logarithmic scale:
 |jakt|jakt1|None|75,920|
 |jakt|jakt2|None|75,920|
 |pony|ponyc|0.43.1- [release]|123,008|
+|hare|hare|Hare dev+b00d4a6f-arch|127,888|
 |odin|odin|odin version dev-2022-10:2cd895c5|170,440|
 |v|v|V 0.3.1 f2f6ea5|179,504|
 |pascal|fpc|Free Pascal Compiler version 3.2.2 [2022/08/31] for x86_64|191,056|

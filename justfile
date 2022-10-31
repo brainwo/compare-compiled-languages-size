@@ -29,6 +29,7 @@
 	just koka-koka
 	just ocamlopt-ocaml
 	just ponyc-pony
+	just hare-hare
 	strip -s bin/*
 	exa -l --sort size --no-user --no-time --no-permissions --no-icons bin
 	just get-size
@@ -117,6 +118,8 @@ bench:
 	ocamlopt --version >> version.txt
 	echo -n "ponyc|" >> version.txt
 	ponyc --version | head -1 >> version.txt
+	echo -n "hare|" >> version.txt
+	hare version >> version.txt
 
 @get-size:
 	exa --sort size --long -B --no-user --no-icons --no-permissions --no-time bin > size.txt
@@ -231,6 +234,9 @@ bench:
 
 @ponyc-pony:
 	ponyc -o=bin -b=ponyc-pony -s lang/pony/
+
+@hare-hare:
+	hare build -o bin/hare-hare lang/hare/main.ha
 
 @clean:
 	rm -rf bin

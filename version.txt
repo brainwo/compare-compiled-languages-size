@@ -25,3 +25,4 @@ koka|Koka 2.3.8, 10:27:37 Dec 27 2021 (ghc release version)
 nasm|NASM version 2.15.05 compiled on Sep 24 2020
 ocamlopt|4.14.0
 ponyc|0.43.1- [release]
+hare|Hare dev+b00d4a6f-arch

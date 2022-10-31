@@ -12,6 +12,7 @@
    75,920 jakt1-jakt
    75,920 jakt2-jakt
   123,008 ponyc-pony
+  127,888 hare-hare
   170,440 odin-odin
   179,504 v-v
   191,056 fpc-pascal
