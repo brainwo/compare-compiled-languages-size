@@ -35,6 +35,7 @@ Logarithmic scale:
 |pony|ponyc|0.43.1- [release]|123,008|
 |odin|odin|odin version dev-2022-10:2cd895c5|170,440|
 |v|v|V 0.3.1 f2f6ea5|179,504|
+|pascal|fpc|Free Pascal Compiler version 3.2.2 [2022/08/31] for x86_64|191,056|
 |kotlin|kotlinc|Kotlin/Native: 1.7.10|208,376|
 |crystal|crystal|Crystal 1.6.1 (2022-10-24)|216,016|
 |rust|rustc|rustc 1.66.0-nightly (db0597f56 2022-10-11)|272,688|
