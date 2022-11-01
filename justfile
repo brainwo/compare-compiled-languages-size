@@ -176,7 +176,7 @@ bench:
 	rm -r build
 
 @valac-vala:
-	valac -c -o bin/valac-vala lang/vala/main.vala
+	valac -o bin/valac-vala lang/vala/main.vala
 
 @crystal-crystal:
 	crystal build --release --threads 1 -o bin/crystal-crystal lang/crystal/main.cr
