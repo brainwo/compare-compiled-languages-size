@@ -10,6 +10,7 @@
    14,552 nim-nim
    18,864 ldc-d
    20,120 tinygo-go
+   34,864 fbc-basic
    75,920 jakt1-jakt
    75,920 jakt2-jakt
   123,008 ponyc-pony

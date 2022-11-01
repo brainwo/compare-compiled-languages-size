@@ -31,6 +31,7 @@ Logarithmic scale:
 |nim|nim|Nim Compiler Version 1.6.8 [Linux: amd64]|14,552|
 |d|ldc|LDC - the LLVM D compiler (1.30.0):|18,864|
 |go|tinygo|tinygo version 0.26.0 linux/amd64 (using go version go1.19.2 and LLVM version 14.0.0)|20,120|
+|basic|fbc|FreeBASIC Compiler - Version 1.09.0 (2022-02-16), built for linux-x86_64 (64bit)|34,864|
 |jakt|jakt1|None|75,920|
 |jakt|jakt2|None|75,920|
 |pony|ponyc|0.43.1- [release]|123,008|

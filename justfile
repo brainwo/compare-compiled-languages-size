@@ -9,6 +9,7 @@
 	just dmd-d
 	just gfortran-fortran
 	just fpc-pascal
+	just fbc-basic
 	just odin-odin
 	just nelua-nelua
 	just go-go
@@ -82,6 +83,8 @@ bench:
 	gfortran --version | head -1 >> version.txt
 	echo -n "fpc|" >> version.txt
 	fpc -h | head -1 >> version.txt
+	echo -n "fbc|" >> version.txt
+	fbc --version | head -1 >> version.txt
 	echo -n "odin|" >> version.txt
 	odin version | head -1 >> version.txt
 	echo -n "nelua|" >> version.txt
@@ -153,6 +156,10 @@ bench:
 @fpc-pascal:
 	fpc -Xs -Os lang/pascal/main.pas -obin/fpc-pascal
 	rm bin/main.o
+
+@fbc-basic:
+	fbc -strip -O s lang/basic/main.bas
+	mv lang/basic/main bin/fbc-basic
 
 @odin-odin:
 	odin build lang/odin/main.odin -file -out:bin/odin-odin -o:size -disable-assert
