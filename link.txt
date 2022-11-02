@@ -1,0 +1,31 @@
+clang-c libc.so.6 GLIBC_2.34
+crystal-crystal libgc.so.1
+dart-dart works
+dmd-d libc.so.6 GLIBC_2.32 GLIBC_2.34
+fbc-basic libncursesw.so.6
+fpc-pascal works
+gcc-c libc.so.6 GLIBC_2.34
+gdc-d libc.so.6 GLIBC_2.33 GLIBC_2.32 GLIBC_2.34
+gfortran-fortran libgfortran.so.5
+ghc-haskell libffi.so.8
+gnatmake-ada libc.so.6 GLIBC_2.35 GLIBC_2.33 GLIBC_2.34
+go-go works
+hare-hare works
+jakt1-jakt libc.so.6 GLIBC_2.34
+jakt2-jakt libc.so.6 GLIBC_2.34
+koka-koka libc.so.6 GLIBC_2.34
+kotlinc-kotlin works
+ldc-d libphobos2-ldc-shared.so.100
+nasm-asm works
+nelua-nelua libc.so.6 GLIBC_2.34
+nim-nim libc.so.6 GLIBC_2.34
+ocamlopt-ocaml libc.so.6 GLIBC_2.33 GLIBC_2.34 libm.so.6 GLIBC_2.35
+odin-odin libc.so.6 GLIBC_2.34
+ponyc-pony libatomic.so.1 GLIBC_2.34
+rustc-rust libc.so.6 GLIBC_2.33 GLIBC_2.32 GLIBC_2.34
+swiftc-swift libswift_Concurrency.so
+tinygo-go works
+v-v libc.so.6 GLIBC_2.32 GLIBC_2.34
+valac-vala libgobject-2.0.so.0
+zig-zig works
+zig-cc libc.so.6 GLIBC_2.34

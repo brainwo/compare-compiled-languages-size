@@ -34,6 +34,7 @@
 	strip -s bin/*
 	exa -l --sort size --no-user --no-time --no-permissions --no-icons bin
 	just get-size
+	just get-filetype
 	just version
 	python3 scripts/bar_chart.py
 	python3 scripts/generate_readme.py
@@ -123,6 +124,9 @@ bench:
 	ponyc --version | head -1 >> version.txt
 	echo -n "hare|" >> version.txt
 	hare version >> version.txt
+
+@get-filetype:
+	file bin/* > filetype.txt
 
 @get-size:
 	exa --sort size --long -B --no-user --no-icons --no-permissions --no-time bin > size.txt

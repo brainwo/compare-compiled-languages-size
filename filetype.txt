@@ -1,0 +1,31 @@
+bin/clang-c:          ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=5c6d3692fc43ae45696745aac76f79dfa0ac9983, for GNU/Linux 4.4.0, stripped
+bin/crystal-crystal:  ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=74d40ff529aaa784369484cae323851342e1888c, for GNU/Linux 4.4.0, stripped
+bin/dart-dart:        ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, stripped
+bin/dmd-d:            ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=f5c9b6ab05d1563bad62527be010103c17907e95, for GNU/Linux 4.4.0, stripped
+bin/fbc-basic:        ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 4.4.0, stripped
+bin/fpc-pascal:       ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, for GNU/Linux 2.4.0, stripped
+bin/gcc-c:            ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=391759f5749bfe2c10575adc4038be43fb692cd8, for GNU/Linux 4.4.0, stripped
+bin/gdc-d:            ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=fa448009b14f54bd2f34ab40b19cfd6a6ac36b09, for GNU/Linux 4.4.0, stripped
+bin/gfortran-fortran: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=dee1114ab74c6c1533cdae4038775be2f417b64a, for GNU/Linux 4.4.0, stripped
+bin/ghc-haskell:      ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 4.4.0, BuildID[sha1]=c5a990de8f8b10c5f196835d1a6d7aa877ba0b43, stripped
+bin/gnatmake-ada:     ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=194c720228657ea840e5b363ffbd04914fa08346, for GNU/Linux 4.4.0, stripped
+bin/go-go:            ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, Go BuildID=M4gb3DZoQZvx8djIx0KX/ct6rRX4MoU_RtahNO8iu/5dHUoaeDnJhZ1fsDhuHG/psy40WJQ75fR5wGJQHoW, stripped
+bin/hare-hare:        ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, stripped
+bin/jakt1-jakt:       ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=ba3560e0d236725243d5ce8c152a92a2b105f9de, for GNU/Linux 4.4.0, stripped
+bin/jakt2-jakt:       ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=ba3560e0d236725243d5ce8c152a92a2b105f9de, for GNU/Linux 4.4.0, stripped
+bin/koka-koka:        ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=2ca6f9d5622dceda0be7bc0116c99574c46dacf7, for GNU/Linux 4.4.0, stripped
+bin/kotlinc-kotlin:   ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.16, BuildID[sha1]=79a74debe83408526dba5d083540396c74728810, stripped
+bin/ldc-d:            ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=1f5d133ba4c81fd05304815f97325aafdfa05709, for GNU/Linux 4.4.0, stripped
+bin/nasm-asm:         ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, stripped
+bin/nelua-nelua:      ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=a437a7deb3e20fe8d7f235f04da615b4ca724859, for GNU/Linux 4.4.0, stripped
+bin/nim-nim:          ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=31c86869c4a749674e5f351eea55ce4afde2daa9, for GNU/Linux 4.4.0, stripped
+bin/ocamlopt-ocaml:   ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=8ba470123477582fabc885525fb916ed43564b83, for GNU/Linux 4.4.0, stripped
+bin/odin-odin:        ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=e60f97513be117da8f6ccd9baf8f613d36adb569, for GNU/Linux 4.4.0, stripped
+bin/ponyc-pony:       ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 4.4.0, BuildID[sha1]=16e70269142fc72344f558a33c334d020cf527cf, stripped
+bin/rustc-rust:       ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=cd6738695f8f9bd5537cc74454da1c782232ed2b, for GNU/Linux 4.4.0, stripped
+bin/swiftc-swift:     ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 4.4.0, stripped
+bin/tinygo-go:        ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, stripped
+bin/valac-vala:       ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=2df9c741bbd2f172a9eff8fbf673998fd677a9b9, for GNU/Linux 4.4.0, stripped
+bin/v-v:              ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=2c6104844fba453dd080892617baab4235134200, for GNU/Linux 4.4.0, stripped
+bin/zigcc-c:          ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 4.4.0, stripped
+bin/zig-zig:          ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, stripped
